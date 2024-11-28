@@ -4,11 +4,10 @@ class Person {
 
   Person({required this.name, required this.age});
 
-  // Factory method to create a Person from a JSON map
   factory Person.fromJson(Map<String, dynamic> json) {
     return Person(
-      name: json['name'] ?? '',  // Use the correct key from the API response
-      age: json['age'] ?? 0,     // Use the correct key from the API response
+      name: json['name'] ?? '',  
+      age: json['age'] ?? 0,    
     );
   }
 }
